@@ -19,19 +19,24 @@
     <main>
         <h1>3 random audios</h1>
 
+           cy.get('audio', { timeout: 10000 }).should($audios => {
+            <!-- // Your assertions here -->
             <audio  controls>
                 <source type="audio/mpeg" src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3">
             </audio>
         
             <audio controls>
-                <source type="audio/ogg" src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+                <source type="audio.ogg" src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
             </audio>
 
             <audio controls>
-                <source type="audio/mp3" src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3">
+                <source type="audio.mpeg" src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3">
             </audio>
+        });
+
             
     </main>
 </body>
 
 </html>
+
